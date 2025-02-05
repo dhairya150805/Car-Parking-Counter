@@ -1,35 +1,83 @@
-# Car Parking Counter
-This project uses OpenCV to count the number of available parking spaces from a video feed. The system can detect and update the status of parking spots in real-time based on the number of cars occupying them.
+# 🚗 Car Parking Counter
 
-## Project Overview
-This project provides a simple parking space counter application using image processing techniques with OpenCV. It allows the user to:
-- Define parking spots on a reference image.
-- Count the available parking spots based on a video input feed.
-- View results with real-time updates of available parking spots.
+This project utilizes **OpenCV** to **detect and count available parking spaces** from a video feed. The system dynamically updates parking spot statuses in **real-time**, distinguishing between occupied and free spaces.
 
-## Installation
-The project consists of two parts:
-1. Parking Spot Selection:
-- This part allows you to manually select the parking spots by clicking on an image. The coordinates of the selected spots are stored in a .pkl file for later use.
-2. Parking Spot Detection:
-- A video feed (e.g., from a camera) is analyzed to determine whether each parking spot is occupied. The available spots are highlighted in green, and occupied spots are shown in red.
+---
 
-- ## Key Libraries:
-- **OpenCV**: A powerful library for image processing and computer vision tasks. It provides tools for reading images, processing them, and analyzing visual data.
-- **Pickle**: A Python module for serializing and deserializing Python objects. In this project, it's used to save and load the positions of parking spots.
-- **cvzone**: A library that simplifies the use of OpenCV for tasks like displaying text and drawing shapes on images.
+## 📌 Project Overview
 
-## Usage:
-1. Parking Spot Selection:
-To mark parking spots on an image:
-- Run the script that allows manual selection of spots:
+This application leverages **image processing techniques** to analyze parking areas and provide a live count of available spaces. It includes:
+
+✅ **Parking Spot Selection** – Manually mark parking spots on an image.
+✅ **Real-time Parking Spot Detection** – Analyze a video feed to detect occupied and free spots.
+✅ **Visual Representation** – Green highlights indicate available spots, while red denotes occupied ones.
+
+---
+
+## 🛠️ Installation & Setup
+
+The project consists of two key components:
+
+### 1️⃣ **Parking Spot Selection**
+This allows users to **define parking spots manually**:
+- Run the script:
   ```bash
-  python ParckingSpacePicker.py
-- Left-click on the image to add a parking spot, and right-click to remove one.
-- The coordinates will be saved in 'assets/positions.pkl'.
-2. Parking Spot Detection:
-To start the parking space counter:
+  python ParkingSpacePicker.py
+  ```
+- **Left-click** to add a spot, **right-click** to remove.
+- Coordinates are stored in **'assets/positions.pkl'** for later use.
+
+### 2️⃣ **Parking Spot Detection**
+To start detecting parking spots from a video feed:
 - Run the detection script:
   ```bash
   python main.py
-- The available parking spots will be shown on the video with real-time updates.
+  ```
+- The system will highlight available and occupied spots **in real time**.
+
+---
+
+## 🔧 Key Dependencies
+Ensure you have the following libraries installed:
+```bash
+pip install opencv-python cvzone pickle
+```
+
+### 🏗️ Libraries Used:
+- **OpenCV** – For image processing and video analysis.
+- **Pickle** – Saves and loads the selected parking spot coordinates.
+- **cvzone** – Simplifies OpenCV tasks like drawing shapes and adding overlays.
+
+---
+
+## 📸 Screenshots (Optional: Add Images)
+- **Parking Spot Selection Mode**
+- **Real-time Detection Output**
+
+*(You can add relevant images to visualize the project.)*
+
+---
+
+## 💡 Future Improvements
+🔹 Support for **automatic spot detection** using deep learning.
+🔹 Integration with **IoT sensors** for enhanced accuracy.
+🔹 Mobile App Integration for remote monitoring.
+
+---
+
+## 🎯 Contributing
+Feel free to fork this project, open issues, or submit pull requests. Contributions are always welcome!
+
+---
+
+## 📜 License
+This project is open-source and available under the **MIT License**.
+
+🔗 **GitHub Repository:** [Your Repo Link Here]  
+👨‍💻 Developed by: **[DHAIRYA ISOTIYA & DEEP KAKADIYA]**
+                  
+
+---
+
+🚀 **Happy Coding!** 🚀
+
